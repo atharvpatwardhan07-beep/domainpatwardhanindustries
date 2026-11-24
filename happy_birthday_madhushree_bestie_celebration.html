@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Madhushree! | December 5 Celebration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    window.handleThumbFallback = function (imgEl, emoji) {
+      imgEl.onerror = null;
+      const parent = imgEl.parentElement;
+      if (parent) {
+        parent.innerHTML = `<span class="text-lg sm:text-xl">${emoji}</span>`;
+      }
+    };
+  </script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            script: ['"Caveat"', 'cursive'],
+          },
+          colors: {
+            night: '#0f0a19',
+            plum: '#1a102b',
+            rosegold: '#f472b6',
+            peach: '#ffc5a1',
+            lavender: '#c084fc',
+            gold: '#fbbf24',
+            starlight: '#fff3d6',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #0f0a19;
+      --glass-bg: rgba(255, 255, 255, 0.055);
+      --glass-border: rgba(255, 224, 236, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: #f8f5ff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Ambient Animated Mesh Gradient Orbs */
+    .ambient-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      overflow: hidden;
+      background: radial-gradient(circle at 20% 20%, #23133d 0%, #0f0a19 55%, #090612 100%);
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(95px);
+      opacity: 0.42;
+      animation: floatOrb 18s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    .orb-1 {
+      width: 44vw;
+      height: 44vw;
+      max-width: 560px;
+      max-height: 560px;
+      top: -10%;
+      left: -8%;
+      background: radial-gradient(circle, #f472b6, #8b5cf6);
+    }
+
+    .orb-2 {
+      width: 40vw;
+      height: 40vw;
+      max-width: 520px;
+      max-height: 520px;
+      bottom: 8%;
+      right: -10%;
+      background: radial-gradient(circle, #fbbf24, #ec4899);
+      animation-delay: -6s;
+    }
+
+    .orb-3 {
+      width: 34vw;
+      height: 34vw;
+      max-width: 440px;
+      max-height: 440px;
+      top: 42%;
+      left: 35%;
+      background: radial-gradient(circle, #c084fc, #38bdf8);
+      opacity: 0.24;
+      animation-delay: -11s;
+    }
+
+    @keyframes floatOrb {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(35px, -28px) scale(1.07); }
+      100% { transform: translate(-25px, 32px) scale(0.95); }
+    }
+
+    /* Frosted Glassmorphism Cards & Pills */
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(22px) saturate(145%);
+      -webkit-backdrop-filter: blur(22px) saturate(145%);
+      border: 1px solid var(--glass-border);
+      box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+      border-radius: 24px;
+    }
+
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 224, 236, 0.18);
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .glass-pill:hover, .glass-pill.active {
+      background: linear-gradient(135deg, rgba(244, 114, 182, 0.28), rgba(192, 132, 252, 0.28));
+      border-color: rgba(244, 114, 182, 0.65);
+      box-shadow: 0 0 22px rgba(244, 114, 182, 0.28);
+      transform: translateY(-2px);
+    }
+
+    .glow-text {
+      background: linear-gradient(120deg, #fff3d6 0%, #f472b6 45%, #c084fc 85%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 4px 24px rgba(244, 114, 182, 0.25));
+    }
+
+    .btn-celebrate {
+      background: linear-gradient(135deg, #f472b6 0%, #fbbf24 55%, #c084fc 100%);
+      box-shadow: 0 10px 30px rgba(244, 114, 182, 0.38);
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .btn-celebrate:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 36px rgba(244, 114, 182, 0.55);
+    }
+
+    .btn-celebrate:active {
+      transform: scale(0.98);
+    }
+
+    /* Confetti Canvas */
+    #confetti-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 60;
+    }
+
+    /* 3D Flip Cards */
+    .flip-card {
+      perspective: 1100px;
+      height: 230px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner,
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 22px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .flip-card-front {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 224, 236, 0.18);
+    }
+
+    .flip-card-back {
+      background: linear-gradient(145deg, rgba(244, 114, 182, 0.22), rgba(192, 132, 252, 0.24));
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(244, 114, 182, 0.45);
+      transform: rotateY(180deg);
+      box-shadow: 0 14px 34px rgba(244, 114, 182, 0.2);
+    }
+
+    /* Interactive Birthday Cake */
+    .cake-stage {
+      position: relative;
+      width: 240px;
+      height: 210px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+
+    .cake-plate {
+      width: 230px;
+      height: 14px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+
+    .cake-bottom {
+      width: 190px;
+      height: 62px;
+      background: linear-gradient(180deg, #f472b6 0%, #db2777 100%);
+      border-radius: 16px 16px 8px 8px;
+      position: relative;
+      box-shadow: inset 0 -8px 14px rgba(0,0,0,0.25);
+    }
+
+    .cake-top {
+      width: 146px;
+      height: 52px;
+      background: linear-gradient(180deg, #fbcfe8 0%, #f9a8d4 100%);
+      border-radius: 16px 16px 6px 6px;
+      position: relative;
+      margin-bottom: -4px;
+      z-index: 2;
+      box-shadow: inset 0 -6px 12px rgba(219, 39, 119, 0.25);
+    }
+
+    .icing-drip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 16px;
+      background: #fff7ed;
+      border-radius: 16px 16px 10px 10px;
+    }
+
+    .candles-row {
+      display: flex;
+      gap: 22px;
+      margin-bottom: -2px;
+      z-index: 3;
+    }
+
+    .candle {
+      width: 10px;
+      height: 36px;
+      background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 4px,
+        #c084fc 4px,
+        #c084fc 8px
+      );
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .flame {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 18px;
+      background: radial-gradient(circle at 50% 70%, #fff 10%, #fde047 50%, #f97316 90%);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      box-shadow: 0 0 16px #fde047, 0 0 30px #fb923c;
+      animation: flicker 0.9s infinite alternate ease-in-out;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .flame.blown-out {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.1);
+      animation: none;
+    }
+
+    .smoke {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 50%;
+      filter: blur(3px);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .smoke.active {
+      animation: riseSmoke 1.6s ease-out forwards;
+    }
+
+    @keyframes flicker {
+      0% { transform: translateX(-50%) scale(1) rotate(-2deg); }
+      100% { transform: translateX(-50%) scale(1.12) rotate(3deg); }
+    }
+
+    @keyframes riseSmoke {
+      0% { opacity: 0.8; transform: translate(-50%, 0) scale(1); }
+      100% { opacity: 0; transform: translate(-30%, -38px) scale(2.8); }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f0a19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(244, 114, 182, 0.35);
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(244, 114, 182, 0.6);
+    }
+
+    /* Visual Moment Cards & Lightbox */
+    .moment-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 224, 236, 0.16);
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      cursor: pointer;
+    }
+
+    .moment-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      border-color: rgba(244, 114, 182, 0.55);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.5), 0 0 22px rgba(244, 114, 182, 0.2);
+    }
+
+    .moment-card img {
+      transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .moment-card:hover img {
+      transform: scale(1.06);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-pink-400/30 selection:text-pink-100">
+
+  <!-- Ambient Background Orbs & Sparkle Canvas -->
+  <div class="ambient-canvas">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- 1. TOP NAVBAR -->
+  <header class="sticky top-3 z-40 px-4 sm:px-6">
+    <nav class="max-w-6xl mx-auto glass-card px-4 sm:px-6 py-3 flex items-center justify-between gap-3 rounded-full">
+      <a href="#top" class="flex items-center gap-2.5 group">
+        <span class="w-9 h-9 rounded-full bg-gradient-to-tr from-pink-400 via-amber-300 to-purple-400 flex items-center justify-center text-night font-bold text-lg shadow-md group-hover:rotate-12 transition-transform">✨</span>
+        <span class="font-serif font-bold text-base sm:text-lg text-white tracking-wide">Madhu • Dec 5</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-purple-100/85">
+        <a href="#moments" class="hover:text-pink-300 transition-colors">Favorite Moments</a>
+        <a href="#squad" class="hover:text-pink-300 transition-colors">Squad Wishes</a>
+        <a href="#adore" class="hover:text-pink-300 transition-colors">Why We Adore You</a>
+        <a href="#cake-section" class="hover:text-pink-300 transition-colors">Birthday Cake</a>
+        <a href="#wishes-wall" class="hover:text-pink-300 transition-colors">Wishes Wall</a>
+      </div>
+
+      <button onclick="launchConfettiBurst()" class="btn-celebrate text-night font-bold text-xs sm:text-sm px-4 py-2 rounded-full flex items-center gap-1.5 cursor-pointer">
+        <span>Celebrate 🎉</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top" class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-24 space-y-20 sm:space-y-28">
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-4 sm:pt-8">
+      <div class="glass-card p-6 sm:p-12 md:p-16 text-center relative overflow-hidden">
+        <!-- Decorative Corner Sparkles -->
+        <div class="absolute top-6 left-8 text-2xl opacity-70 animate-pulse">✦</div>
+        <div class="absolute bottom-8 right-10 text-2xl opacity-70 animate-pulse" style="animation-delay: 0.7s;">✦</div>
+
+        <!-- December 5 Birthday Edition Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-pink-300/35 text-pink-200 text-xs sm:text-sm font-semibold mb-6 shadow-[0_0_24px_rgba(244,114,182,0.2)]">
+          <span>🎂</span>
+          <span>December 5 • Birthday Edition</span>
+          <span>💖</span>
+        </div>
+
+        <!-- Subtle Circular Spotlight Frame -->
+        <div class="mx-auto mb-6 w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-tr from-pink-400 via-amber-300 to-purple-400 shadow-[0_0_32px_rgba(244,114,182,0.38)]">
+          <div class="w-full h-full rounded-full overflow-hidden bg-plum flex items-center justify-center">
+            <img src="IMG-20260621-WA0080.jpg" alt="Madhushree" class="w-full h-full object-cover object-top" onerror="handleThumbFallback(this, '👑')" />
+          </div>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight mb-4">
+          Happy Birthday, <br class="sm:hidden" />
+          <span class="glow-text">Madhushree!</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="font-script text-2xl sm:text-4xl text-peach mb-6">
+          To our favorite human, chaos partner, and forever bestie, Madhu 💫
+        </p>
+
+        <!-- Heartfelt Intro Copy -->
+        <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-purple-100/85 leading-relaxed mb-8">
+          Today is all about celebrating your unstoppable energy, your contagious laugh, your golden heart, and every unforgettable adventure we share together. Life is infinitely brighter, louder, and happier with you in our corner.
+        </p>
+
+        <!-- Squad Pills Row in Exact Sequence -->
+        <div class="max-w-3xl mx-auto mb-9">
+          <p class="text-[11px] uppercase tracking-[0.22em] text-pink-200/75 font-semibold mb-3">
+            Celebrated with love by your forever bestie squad
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-2">
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-pink-300/30 text-white">✨ Kamala</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-purple-300/30 text-white">💫 Riddhi</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-emerald-300/30 text-white">🚀 Atharv</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-amber-300/30 text-white">🌟 Asmi</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-rose-300/30 text-white">🌸 Vinaya</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-sky-300/30 text-white">⚡ Avadhoot</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-indigo-300/30 text-white">🎶 Sameer</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-fuchsia-300/30 text-white">🦋 Aarika</span>
+            <span class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-orange-300/30 text-white">🌷 Tanaya</span>
+          </div>
+        </div>
+
+        <!-- Two CTA Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
+          <button onclick="launchConfettiBurst()" class="btn-celebrate text-night font-bold px-6 sm:px-8 py-3.5 rounded-full text-sm sm:text-base flex items-center gap-2 cursor-pointer">
+            <span>Launch Birthday Confetti 🎉</span>
+          </button>
+          <a href="#squad" class="glass-pill px-6 sm:px-7 py-3.5 rounded-full text-sm sm:text-base font-semibold text-white flex items-center gap-2">
+            <span>Read Squad Wishes 💌</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2B. FAVORITE MOMENTS SHOWCASE -->
+    <section id="moments" class="space-y-8" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDropMoments(event)">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-[0.22em] text-pink-300 font-semibold">Unforgettable Days With The Crew</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+          Favorite <span class="glow-text">Moments</span> ✨
+        </h2>
+        <p class="text-sm sm:text-base text-purple-100/80">
+          Every laugh, celebration, and spontaneous hangout that makes our bond one of a kind.
+        </p>
+        <div class="pt-1">
+          <input type="file" id="local-moments-input" accept="image/*" multiple class="hidden" onchange="loadLocalMoments(event)" />
+          <button type="button" onclick="document.getElementById('local-moments-input').click()" class="glass-pill px-4 py-1.5 rounded-full text-xs font-semibold text-pink-200 hover:text-white inline-flex items-center gap-1.5 cursor-pointer">
+            <span>✨ Unlock Full Moments</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5" id="moment-filters">
+        <button onclick="filterMoments('all', this)" class="glass-pill active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-white cursor-pointer">
+          All Moments ✨
+        </button>
+        <button onclick="filterMoments('glam', this)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-purple-100 cursor-pointer">
+          Festive Glam 👑
+        </button>
+        <button onclick="filterMoments('hangouts', this)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-purple-100 cursor-pointer">
+          Squad Hangouts 🫂
+        </button>
+        <button onclick="filterMoments('little', this)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-purple-100 cursor-pointer">
+          Little Madhu 🎀
+        </button>
+        <button onclick="filterMoments('chaos', this)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-purple-100 cursor-pointer">
+          Pure Chaos 😂
+        </button>
+      </div>
+
+      <!-- Bento / Masonry Grid of Memories -->
+      <div id="moments-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+        <!-- Rendered cleanly via JS -->
+      </div>
+    </section>
+
+    <!-- 3. MEET THE BESTIE SQUAD & OUR WISHES (9 INDIVIDUAL CARDS IN EXACT SEQUENCE) -->
+    <section id="squad" class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-[0.22em] text-pink-300 font-semibold">Nine Besties, One Heart</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+          Meet the <span class="glow-text">Bestie Squad</span> & Our Wishes 💖
+        </h2>
+        <p class="text-sm sm:text-base text-purple-100/80">
+          Personal birthday notes written straight from the heart for Madhu!
+        </p>
+      </div>
+
+      <div id="squad-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- 1. Kamala -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-pink-300/25 hover:border-pink-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-pink-400/30 to-rose-500/30 border border-pink-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="20261018_193623.jpg" alt="Kamala" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '✨')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-pink-400/15 text-pink-200 border border-pink-300/25">Day-One Soulmate</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Kamala</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Happy Birthday, Madhu! Whether we are laughing over the smallest inside jokes or talking for hours about life, you make every ordinary day feel magical. Wishing you a year as radiant and kind as your heart!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-pink-200/75 font-medium">
+            With endless hugs • Dec 5 💕
+          </div>
+        </div>
+
+        <!-- 2. Riddhi -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-purple-300/25 hover:border-purple-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-400/30 to-indigo-500/30 border border-purple-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20260625-WA0053.jpg" alt="Riddhi" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '💫')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-purple-400/15 text-purple-200 border border-purple-300/25">Late-Night Lifeline</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Riddhi</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "From chaotic late-night catch-ups to non-stop laughter until our stomachs hurt, life is never dull with you around! Happy Birthday to my favorite partner-in-crime—keep shining bright!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-purple-200/75 font-medium">
+            Forever your bestie • Dec 5 💜
+          </div>
+        </div>
+
+        <!-- 3. Atharv -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-emerald-300/25 hover:border-emerald-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-400/30 to-teal-500/30 border border-emerald-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20260904-WA0078.jpg" alt="Atharv" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🚀')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-400/15 text-emerald-200 border border-emerald-300/25">Adventure Crew</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Atharv</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Every hangout becomes legendary the second you show up with that unmatched energy! Wishing you huge success, fearless adventures, and the happiest birthday yet, Madhu!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-emerald-200/75 font-medium">
+            To many more adventures • Dec 5 🌟
+          </div>
+        </div>
+
+        <!-- 4. Asmi -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-amber-300/25 hover:border-amber-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-amber-400/30 to-pink-500/30 border border-amber-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20261122-WA0035.jpg" alt="Asmi" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🌟')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-amber-400/15 text-amber-200 border border-amber-300/25">Sunshine Twin</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Asmi</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Happy Birthday, Madhu! Thank you for always hyping us up, turning simple afternoons into full comedy shows, and being the warmest, funniest soul in our group. Love you tons!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-amber-200/75 font-medium">
+            Besties forever • Dec 5 ✨
+          </div>
+        </div>
+
+        <!-- 5. Vinaya -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-rose-300/25 hover:border-rose-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-rose-400/30 to-orange-500/30 border border-rose-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20260904-WA0067.jpg" alt="Vinaya" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🌸')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-rose-400/15 text-rose-200 border border-rose-300/25">Heart & Grace</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Vinaya</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "You bring the warmest energy, the best hugs, and effortless grace to every single celebration! May this birthday bring you every dream your heart has been wishing for, Madhushree."
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-rose-200/75 font-medium">
+            Cheering for you always • Dec 5 🌺
+          </div>
+        </div>
+
+        <!-- 6. Avadhoot -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-sky-300/25 hover:border-sky-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-sky-400/30 to-indigo-500/30 border border-sky-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="20260908_123808.jpg" alt="Avadhoot" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '⚡')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-sky-400/15 text-sky-200 border border-sky-300/25">Comedy Rival</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Avadhoot</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Happy Birthday to the undefeated champion of dramatic banter and spontaneous group laughs! Keep bringing that unmatched humor and positive vibe everywhere you go, Madhu!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-sky-200/75 font-medium">
+            Your squad brother • Dec 5 🎉
+          </div>
+        </div>
+
+        <!-- 7. Sameer -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-indigo-300/25 hover:border-indigo-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-indigo-400/30 to-purple-500/30 border border-indigo-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20261121-WA0027.jpg" alt="Sameer" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🎶')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-indigo-400/15 text-indigo-200 border border-indigo-300/25">Vibe Keeper</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Sameer</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Happy Birthday, Madhushree! You are the spark that keeps the whole gang smiling together. May your year ahead be packed with good music, great treats, and non-stop happiness!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-indigo-200/75 font-medium">
+            Cheers to you, Madhu • Dec 5 🎂
+          </div>
+        </div>
+
+        <!-- 8. Aarika -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-fuchsia-300/25 hover:border-fuchsia-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-fuchsia-400/30 to-purple-500/30 border border-fuchsia-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20260729-WA0031.jpg" alt="Aarika" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🦋')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-fuchsia-400/15 text-fuchsia-200 border border-fuchsia-300/25">Sweetness & Sparkle</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Aarika</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "Happy Birthday, Madhu! Your warmth, contagious giggle, and spontaneous joy make every hangout unforgettable. Wishing you a year overflowing with magic and dreams coming true!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-fuchsia-200/75 font-medium">
+            Sending giant hugs • Dec 5 🦋
+          </div>
+        </div>
+
+        <!-- 9. Tanaya -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-4 border-orange-300/25 hover:border-orange-300/55 transition-all">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-orange-400/30 to-rose-500/30 border border-orange-300/40 flex items-center justify-center text-xl shadow-md">
+                <img src="IMG-20260621-WA0100.jpg" alt="Tanaya" class="w-full h-full object-cover" onerror="handleThumbFallback(this, '🌷')" />
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-orange-400/15 text-orange-200 border border-orange-300/25">Hype & Heart Bestie</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white">Tanaya</h3>
+            <p class="text-xs sm:text-sm text-purple-100/85 leading-relaxed">
+              "To the girl who always knows how to turn an ordinary afternoon into our favorite story—Happy Birthday, Madhushree! Keep glowing, keep smiling, and never change for anyone!"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 text-[11px] text-orange-200/75 font-medium">
+            Love you always • Dec 5 🌷
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY WE ADORE YOU (6 INTERACTIVE 3D FLIP CARDS) -->
+    <section id="adore" class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-[0.22em] text-lavender font-semibold">Tap or Hover to Flip</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+          Why We <span class="glow-text">Adore You</span> 💫
+        </h2>
+        <p class="text-sm sm:text-base text-purple-100/80">
+          Six undeniable reasons why Madhushree is the heart and soul of our squad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">😂</span>
+              <h3 class="font-serif text-xl font-bold text-white">Unmatched Comedy Timing</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Queen of Pure Joy</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Your witty one-liners, dramatic storytelling, and infectious giggle turn even the quietest afternoon into our favorite memory of the week.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">🫂</span>
+              <h3 class="font-serif text-xl font-bold text-white">Fierce Loyalty & Warmth</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Safe Space Always</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                One hug or pep talk from Madhu fixes any rough day instantly. You care deeply and show up wholeheartedly for every single friend.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">👑</span>
+              <h3 class="font-serif text-xl font-bold text-white">Iconic Main-Character Vibe</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Effortless Radiance</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Wherever you walk in, you bring confidence, warmth, and an unmistakable sparkle that lights up the entire room.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">💬</span>
+              <h3 class="font-serif text-xl font-bold text-white">24/7 Bestie Lifeline</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Always One Ping Away</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Late-night voice notes, marathon catch-up chats, and hilarious banter—distance never stands a chance when Madhu is around.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">🌟</span>
+              <h3 class="font-serif text-xl font-bold text-white">Our Biggest Cheerleader</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Pure Gold Heart</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                You celebrate every win of ours like it is your own, and seeing you chase your dreams makes us endlessly proud of you.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front space-y-3">
+              <span class="text-4xl">✨</span>
+              <h3 class="font-serif text-xl font-bold text-white">Spontaneous Adventure Spirit</h3>
+              <p class="text-xs text-pink-200/75">Tap to reveal →</p>
+            </div>
+            <div class="flip-card-back space-y-2">
+              <h4 class="font-serif text-lg font-bold text-starlight">Never a Dull Moment</h4>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                From last-minute food runs to endless talks that stretch past sunset, every plan is ten times better with you leading the way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MAKE A WISH & BLOW OUT THE CANDLES -->
+    <section id="cake-section" class="relative">
+      <div class="glass-card p-6 sm:p-12 text-center max-w-3xl mx-auto relative overflow-hidden">
+        <span class="text-xs uppercase tracking-[0.22em] text-pink-300 font-semibold">Close Your Eyes & Make a Wish</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-3">
+          Make a Wish & <span class="glow-text">Blow Out the Candles</span> 🎂
+        </h2>
+        <p class="text-sm sm:text-base text-purple-100/80 max-w-lg mx-auto mb-8">
+          Make your biggest wish for the year ahead, then tap the cake or button below to blow out the candles and unlock your secret squad letter!
+        </p>
+
+        <!-- Interactive Layered CSS Birthday Cake -->
+        <div class="cake-stage mb-8" onclick="blowOutCandles()" title="Tap to blow out the candles">
+          <div class="candles-row" id="candles-row">
+            <div class="candle">
+              <div class="flame" id="flame-1"></div>
+              <div class="smoke" id="smoke-1"></div>
+            </div>
+            <div class="candle">
+              <div class="flame" id="flame-2"></div>
+              <div class="smoke" id="smoke-2"></div>
+            </div>
+            <div class="candle">
+              <div class="flame" id="flame-3"></div>
+              <div class="smoke" id="smoke-3"></div>
+            </div>
+          </div>
+          <div class="cake-top">
+            <div class="icing-drip"></div>
+          </div>
+          <div class="cake-bottom">
+            <div class="icing-drip"></div>
+            <div class="pt-5 font-script text-xl text-white/95">Dec 5 • Madhu</div>
+          </div>
+          <div class="cake-plate"></div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <button id="blow-candles-btn" onclick="blowOutCandles()" class="btn-celebrate text-night font-bold px-7 py-3.5 rounded-full text-sm sm:text-base cursor-pointer">
+            🌬️ Blow Out Candles
+          </button>
+          <button id="relight-candles-btn" onclick="relightCandles()" class="hidden glass-pill px-5 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-pink-200 cursor-pointer">
+            🔥 Relight Candles
+          </button>
+        </div>
+
+        <!-- Secret Birthday Letter Unlocked When Candles Are Blown Out -->
+        <div id="secret-letter" class="hidden mt-9 text-left glass-card p-6 sm:p-8 border-pink-300/40 bg-gradient-to-br from-pink-500/10 to-purple-600/15 transition-all duration-500">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-script text-2xl sm:text-3xl text-peach">Dearest Madhushree,</span>
+            <span class="text-2xl">💌</span>
+          </div>
+          <div class="space-y-3.5 text-sm sm:text-base text-purple-100/90 leading-relaxed">
+            <p>
+              Happy, happy birthday to our favorite human in the universe! Watching you grow, shine brighter every year, and share your genuine warmth with everyone lucky enough to know you is the greatest gift.
+            </p>
+            <p>
+              Thank you for every late-night talk, every shared treat, every uncontrollable fit of laughter, and every moment you stood beside us. May this new year bring you endless reasons to smile, bold dreams coming true, and non-stop adventures with your squad.
+            </p>
+            <p class="font-semibold text-pink-200 pt-2">
+              Forever cheering for you,<br />
+              Kamala, Riddhi, Atharv, Asmi, Vinaya, Avadhoot, Sameer, Aarika & Tanaya 💖✨
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BESTIE WISHES WALL -->
+    <section id="wishes-wall" class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-[0.22em] text-lavender font-semibold">Love Notes From Your People</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+          Bestie <span class="glow-text">Wishes Wall</span> 💌
+        </h2>
+        <p class="text-sm sm:text-base text-purple-100/80">
+          Heartfelt birthday notes written for Madhu by her favorite people.
+        </p>
+      </div>
+
+      <!-- Full-Width Squad Notes Grid -->
+      <div id="wishes-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. CLEAN FOOTER -->
+  <footer class="border-t border-white/10 py-8 px-4 text-center text-xs sm:text-sm text-purple-200/70">
+    <p>Made with endless love for Madhushree • December 5 • Kamala, Riddhi, Atharv, Asmi, Vinaya, Avadhoot, Sameer, Aarika & Tanaya</p>
+  </footer>
+
+  <!-- Toast Notification Box -->
+  <div id="toast-box" class="fixed bottom-5 right-5 z-50 pointer-events-none transform translate-y-10 opacity-0 transition-all duration-300">
+    <div class="glass-card px-5 py-3 rounded-full border-pink-300/40 text-sm font-medium text-white shadow-xl flex items-center gap-2">
+      <span id="toast-icon">✨</span>
+      <span id="toast-text">Notification</span>
+    </div>
+  </div>
+
+  <!-- Full-Screen Memory Lightbox -->
+  <div id="moment-lightbox" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8" onclick="closeLightbox(event)">
+    <div class="glass-card max-w-3xl w-full p-4 sm:p-6 relative space-y-4 border-pink-300/35" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" aria-label="Close" class="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-white/15 hover:bg-pink-500/40 text-white font-bold flex items-center justify-center transition-colors cursor-pointer">
+        ✕
+      </button>
+      <div class="w-full max-h-[70vh] rounded-2xl overflow-hidden bg-plum flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="Favorite Moment" class="max-h-[70vh] w-auto object-contain rounded-xl" />
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-2 px-1">
+        <div>
+          <span id="lightbox-badge" class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-pink-400/20 text-pink-200 border border-pink-300/30 mb-1"></span>
+          <h3 id="lightbox-title" class="font-serif text-lg sm:text-xl font-bold text-white"></h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="stepLightbox(-1)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-white cursor-pointer">← Prev</button>
+          <button onclick="stepLightbox(1)" class="glass-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-white cursor-pointer">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // 1. FAVORITE MOMENTS SHOWCASE & LIGHTBOX
+    // ==========================================
+    const momentsData = [
+      { file: "IMG-20261124-WA0041.jpg", title: "Royal Pink & Mehndi Grace", badge: "Festive Glam 👑", category: "glam", emoji: "👑", gradient: "from-pink-500/30 via-fuchsia-500/20 to-purple-600/30" },
+      { file: "IMG-20260908-WA0053.jpg", title: "Saree Squad Celebration", badge: "Festive Glam 👑", category: "glam", emoji: "✨", gradient: "from-amber-400/30 via-pink-500/20 to-purple-600/30" },
+      { file: "20261018_193623.jpg", title: "Festive Glam & Big Smiles", badge: "Festive Glam 👑", category: "glam", emoji: "💖", gradient: "from-purple-500/30 via-pink-500/20 to-rose-500/30" },
+      { file: "20261018_193642.jpg", title: "Traditional Night With The Crew", badge: "Festive Glam 👑", category: "glam", emoji: "🌟", gradient: "from-rose-500/30 via-amber-400/20 to-purple-600/30" },
+      { file: "IMG-20261124-WA0038.jpg", title: "Shining Bright On Stage", badge: "Festive Glam 👑", category: "glam", emoji: "🏆", gradient: "from-indigo-500/30 via-pink-500/20 to-amber-400/30" },
+
+      { file: "IMG-20260621-WA0080.jpg", title: "Main-Character Energy", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "💫", gradient: "from-emerald-400/25 via-pink-500/20 to-purple-600/30" },
+      { file: "IMG-20260621-WA0081.jpg", title: "Bestie Duo Vibes", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🤝", gradient: "from-amber-400/25 via-purple-500/20 to-pink-500/30" },
+      { file: "IMG-20260621-WA0096.jpg", title: "Warmest Nighttime Hugs", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🫂", gradient: "from-pink-500/30 via-rose-400/20 to-indigo-500/30" },
+      { file: "IMG-20260621-WA0100.jpg", title: "All Smiles Together", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🌷", gradient: "from-orange-400/25 via-pink-500/20 to-purple-600/30" },
+      { file: "20260908_123808.jpg", title: "Bouquet & Full Squad Cheer", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "💐", gradient: "from-pink-400/30 via-sky-400/20 to-purple-500/30" },
+      { file: "IMG-20260904-WA0067.jpg", title: "Unbreakable Bond", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🌸", gradient: "from-sky-400/30 via-pink-400/20 to-rose-500/30" },
+      { file: "IMG-20260904-WA0078.jpg", title: "Sunshine & Laughter", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "☀️", gradient: "from-yellow-400/30 via-sky-400/20 to-purple-500/30" },
+      { file: "IMG-20261122-WA0035.jpg", title: "Mirror Check With Bestie", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🪞", gradient: "from-lime-400/25 via-pink-400/20 to-purple-500/30" },
+      { file: "IMG-20261122-WA0036.jpg", title: "Blooming & Glowing", badge: "Squad Hangouts 🫂", category: "hangouts", emoji: "🌺", gradient: "from-emerald-400/25 via-pink-500/25 to-purple-500/30" },
+
+      { file: "IMG-20261124-WA0030.jpg", title: "Little Madhu & Her Pink Doll", badge: "Little Madhu 🎀", category: "little", emoji: "🎀", gradient: "from-pink-400/35 via-rose-300/20 to-purple-500/30" },
+      { file: "IMG-20261124-WA0032.jpg", title: "Iconic Sassy Pose Since Day One", badge: "Little Madhu 🎀", category: "little", emoji: "💁‍♀️", gradient: "from-amber-400/30 via-pink-400/25 to-indigo-500/30" },
+      { file: "IMG-20261124-WA0037.jpg", title: "Cutest Little Jungle Explorer", badge: "Little Madhu 🎀", category: "little", emoji: "🌿", gradient: "from-emerald-400/30 via-teal-400/20 to-sky-500/30" },
+      { file: "IMG-20261124-WA0027.jpg", title: "MasterChef Madhu Reporting!", badge: "Little Madhu 🎀", category: "little", emoji: "👩‍🍳", gradient: "from-sky-400/30 via-amber-300/20 to-pink-500/30" },
+      { file: "IMG-20261124-WA0043.jpg", title: "Sweetest Childhood Smile", badge: "Little Madhu 🎀", category: "little", emoji: "🍭", gradient: "from-orange-400/30 via-pink-400/25 to-purple-500/30" },
+
+      { file: "IMG-20261121-WA0027.jpg", title: "Mid-Air Squad Jump Chaos", badge: "Pure Chaos 😂", category: "chaos", emoji: "🚀", gradient: "from-sky-400/30 via-purple-500/25 to-pink-500/30" },
+      { file: "IMG-20260904-WA0082.jpg", title: "Dramatic Action Scene", badge: "Pure Chaos 😂", category: "chaos", emoji: "🥊", gradient: "from-yellow-400/30 via-red-400/20 to-sky-500/30" },
+      { file: "IMG-20260729-WA0031.jpg", title: "Heart Arch Perfection", badge: "Pure Chaos 😂", category: "chaos", emoji: "🫶", gradient: "from-fuchsia-500/30 via-pink-400/20 to-indigo-500/30" },
+      { file: "IMG-20260729-WA0030.jpg", title: "Hands Up, Bestie Mode On", badge: "Pure Chaos 😂", category: "chaos", emoji: "🙌", gradient: "from-blue-500/30 via-pink-400/20 to-amber-400/30" },
+      { file: "20260909_124848.jpg", title: "Auto-Rickshaw Comedy Hour", badge: "Pure Chaos 😂", category: "chaos", emoji: "🛺", gradient: "from-amber-400/30 via-pink-500/20 to-purple-600/30" },
+      { file: "IMG-20260627-WA0061.jpg", title: "Late-Night Filter Madness", badge: "Pure Chaos 😂", category: "chaos", emoji: "🐶", gradient: "from-purple-500/30 via-pink-500/25 to-amber-400/30" },
+      { file: "20260804_200011.jpg", title: "Midnight Laughs & Good Vibes", badge: "Pure Chaos 😂", category: "chaos", emoji: "🌙", gradient: "from-indigo-500/30 via-purple-500/25 to-pink-500/30" }
+    ];
+
+    let activeFilter = 'all';
+    let currentFilteredMoments = [...momentsData];
+    let currentLightboxIndex = 0;
+    const localObjectUrls = {};
+
+    function resolveMomentSrc(filename) {
+      return localObjectUrls[filename] || localObjectUrls[filename.toLowerCase()] || filename;
+    }
+
+    function applyLocalFiles(fileList) {
+      if (!fileList || !fileList.length) return;
+      let matched = 0;
+      Array.from(fileList).forEach(file => {
+        if (!file.type.startsWith('image/')) return;
+        const url = URL.createObjectURL(file);
+        localObjectUrls[file.name] = url;
+        localObjectUrls[file.name.toLowerCase()] = url;
+        matched++;
+      });
+
+      if (matched > 0) {
+        // Update hero & squad thumbnails if matched
+        document.querySelectorAll('img[data-file]').forEach(img => {
+          const fname = img.getAttribute('data-file');
+          const resolved = resolveMomentSrc(fname);
+          if (resolved !== fname) {
+            img.src = resolved;
+          }
+        });
+        renderMoments();
+        launchConfettiBurst();
+        showToast('Moments unlocked and glowing! ✨', '💖');
+      }
+    }
+
+    function loadLocalMoments(event) {
+      applyLocalFiles(event.target.files);
+    }
+
+    function handleDragOver(event) {
+      event.preventDefault();
+      event.currentTarget.classList.add('ring-2', 'ring-pink-400/50', 'rounded-3xl');
+    }
+
+    function handleDragLeave(event) {
+      event.currentTarget.classList.remove('ring-2', 'ring-pink-400/50', 'rounded-3xl');
+    }
+
+    function handleDropMoments(event) {
+      event.preventDefault();
+      event.currentTarget.classList.remove('ring-2', 'ring-pink-400/50', 'rounded-3xl');
+      if (event.dataTransfer && event.dataTransfer.files) {
+        applyLocalFiles(event.dataTransfer.files);
+      }
+    }
+
+    function renderMoments() {
+      const grid = document.getElementById('moments-grid');
+      if (!grid) return;
+
+      currentFilteredMoments = activeFilter === 'all'
+        ? [...momentsData]
+        : momentsData.filter(m => m.category === activeFilter);
+
+      grid.innerHTML = '';
+
+      currentFilteredMoments.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'moment-card group aspect-[4/5] flex flex-col justify-end';
+        card.onclick = () => openLightbox(idx);
+        const resolvedSrc = resolveMomentSrc(item.file);
+
+        card.innerHTML = `
+          <div class="absolute inset-0 bg-gradient-to-br ${item.gradient} flex flex-col items-center justify-center p-4 text-center">
+            <span class="text-4xl sm:text-5xl mb-2 drop-shadow">${item.emoji}</span>
+            <span class="text-[11px] font-semibold text-white/80 tracking-wide">${escapeHTML(item.badge)}</span>
+          </div>
+          <img
+            src="${resolvedSrc}"
+            alt="${escapeHTML(item.title)}"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-night/90 via-night/25 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+          <div class="relative z-10 p-3.5 sm:p-4 space-y-1">
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/15 backdrop-blur-md text-pink-200 border border-white/15">
+              ${escapeHTML(item.badge)}
+            </span>
+            <h3 class="font-serif text-sm sm:text-base font-bold text-white leading-snug">
+              ${escapeHTML(item.title)}
+            </h3>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterMoments(category, btnEl) {
+      activeFilter = category;
+      document.querySelectorAll('#moment-filters .glass-pill').forEach(btn => {
+        btn.classList.remove('active', 'text-white');
+        btn.classList.add('text-purple-100');
+      });
+      if (btnEl) {
+        btnEl.classList.add('active', 'text-white');
+        btnEl.classList.remove('text-purple-100');
+      }
+      renderMoments();
+    }
+
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      const item = currentFilteredMoments[currentLightboxIndex];
+      if (!item) return;
+
+      const modal = document.getElementById('moment-lightbox');
+      const img = document.getElementById('lightbox-img');
+      document.getElementById('lightbox-badge').textContent = item.badge;
+      document.getElementById('lightbox-title').textContent = item.title;
+      img.src = resolveMomentSrc(item.file);
+      img.alt = item.title;
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(event) {
+      if (event && event.target !== event.currentTarget) return;
+      const modal = document.getElementById('moment-lightbox');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function stepLightbox(delta) {
+      if (!currentFilteredMoments.length) return;
+      currentLightboxIndex = (currentLightboxIndex + delta + currentFilteredMoments.length) % currentFilteredMoments.length;
+      openLightbox(currentLightboxIndex);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('moment-lightbox');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') stepLightbox(1);
+        if (e.key === 'ArrowLeft') stepLightbox(-1);
+      }
+    });
+
+    // ==========================================
+    // 1B. INTERACTIVE BIRTHDAY CAKE CANDLES
+    // ==========================================
+    let candlesBlown = false;
+
+    function blowOutCandles() {
+      if (candlesBlown) return;
+      candlesBlown = true;
+
+      for (let i = 1; i <= 3; i++) {
+        const flame = document.getElementById(`flame-${i}`);
+        const smoke = document.getElementById(`smoke-${i}`);
+        if (flame) flame.classList.add('blown-out');
+        if (smoke) {
+          smoke.classList.remove('active');
+          void smoke.offsetWidth;
+          smoke.classList.add('active');
+        }
+      }
+
+      document.getElementById('blow-candles-btn').classList.add('hidden');
+      document.getElementById('relight-candles-btn').classList.remove('hidden');
+      document.getElementById('secret-letter').classList.remove('hidden');
+
+      launchConfettiBurst();
+      showToast('Wish made! Your secret squad letter is unlocked 💌', '🎂');
+    }
+
+    function relightCandles() {
+      candlesBlown = false;
+      for (let i = 1; i <= 3; i++) {
+        const flame = document.getElementById(`flame-${i}`);
+        if (flame) flame.classList.remove('blown-out');
+      }
+      document.getElementById('blow-candles-btn').classList.remove('hidden');
+      document.getElementById('relight-candles-btn').classList.add('hidden');
+    }
+
+    // ==========================================
+    // 2. BESTIE WISHES WALL (CUSTOM SQUAD NOTES)
+    // ==========================================
+    const initialWishes = [
+      {
+        name: "Kamala",
+        tag: "💖 Forever Bestie",
+        message: "Happy Birthday, Madhu! Thank you for being my constant source of laughter, warmth, and unstoppable positive energy. December 5 belongs completely to you! 🎂✨"
+      },
+      {
+        name: "Riddhi",
+        tag: "💫 Late-Night Lifeline",
+        message: "From chaotic late-night catch-ups to non-stop laughter until our stomachs hurt, life is never dull with you around! Happy Birthday to my favorite partner-in-crime! 💜"
+      },
+      {
+        name: "Atharv",
+        tag: "🚀 Adventure Crew",
+        message: "Every hangout becomes legendary the second you show up with that unmatched energy! Wishing you huge success and the happiest birthday yet, Madhu! 🌟"
+      },
+      {
+        name: "Asmi",
+        tag: "🌟 Sunshine Twin",
+        message: "Happy Birthday, Madhu! Thank you for always hyping us up, turning simple afternoons into full comedy shows, and being the warmest soul in our group. Love you tons! ✨"
+      },
+      {
+        name: "Vinaya",
+        tag: "🌸 Heart & Grace",
+        message: "You bring the warmest energy, the best hugs, and effortless grace to every single celebration! May this birthday bring you every dream your heart wishes for. 🌺"
+      },
+      {
+        name: "Avadhoot",
+        tag: "⚡ Comedy Rival",
+        message: "Happy Birthday to the undefeated champion of dramatic banter and spontaneous group laughs! Keep bringing that unmatched humor everywhere you go, Madhu! 🎉"
+      },
+      {
+        name: "Sameer",
+        tag: "🎶 Vibe Keeper",
+        message: "Happy Birthday, Madhushree! You are the spark that keeps the whole gang smiling together. May your year ahead be packed with good music and non-stop happiness! 🎂"
+      },
+      {
+        name: "Aarika",
+        tag: "🦋 Sweetness & Sparkle",
+        message: "Happy Birthday, Madhu! Your warmth, contagious giggle, and spontaneous joy make every hangout unforgettable. Wishing you a year overflowing with magic! 🦋"
+      },
+      {
+        name: "Tanaya",
+        tag: "🌷 Hype & Heart Bestie",
+        message: "To the girl who always knows how to turn an ordinary afternoon into our favorite story—Happy Birthday, Madhushree! Keep glowing and never change! 🌷"
+      }
+    ];
+
+    let wishesList = [...initialWishes];
+
+    function escapeHTML(str) {
+      return str.replace(/[&<>"']/g, function (m) {
+        return {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;'
+        }[m];
+      });
+    }
+
+    function renderWishes() {
+      const container = document.getElementById('wishes-container');
+      container.innerHTML = '';
+
+      wishesList.forEach(w => {
+        const card = document.createElement('div');
+        card.className = 'glass-card p-6 flex flex-col justify-between space-y-3 border-white/15 hover:border-pink-300/40 transition-colors';
+        card.innerHTML = `
+          <div class="space-y-2.5">
+            <span class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-pink-400/15 text-pink-200 border border-pink-300/25">
+              ${escapeHTML(w.tag)}
+            </span>
+            <p class="text-xs sm:text-sm text-purple-100/90 leading-relaxed">
+              "${escapeHTML(w.message)}"
+            </p>
+          </div>
+          <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-peach">
+            <span>— ${escapeHTML(w.name)}</span>
+            <span>Dec 5 ✨</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function addBirthdayWish(event) {
+      event.preventDefault();
+      const nameInput = document.getElementById('wish-name');
+      const tagInput = document.getElementById('wish-tag');
+      const msgInput = document.getElementById('wish-message');
+
+      const name = nameInput.value.trim();
+      const tag = tagInput.value;
+      const message = msgInput.value.trim();
+
+      if (!name || !message) return;
+
+      wishesList.unshift({ name, tag, message });
+      renderWishes();
+
+      nameInput.value = '';
+      msgInput.value = '';
+
+      launchConfettiBurst();
+      showToast(`Your birthday wish from ${name} is live! 💌`, '🎉');
+    }
+
+    // ==========================================
+    // 3. TOAST NOTIFICATION HELPER
+    // ==========================================
+    let toastTimeout;
+    function showToast(text, icon = '✨') {
+      const box = document.getElementById('toast-box');
+      document.getElementById('toast-text').textContent = text;
+      document.getElementById('toast-icon').textContent = icon;
+
+      box.classList.remove('translate-y-10', 'opacity-0');
+      box.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        box.classList.add('translate-y-10', 'opacity-0');
+        box.classList.remove('translate-y-0', 'opacity-100');
+      }, 3400);
+    }
+
+    // ==========================================
+    // 4. CELEBRATORY CONFETTI & SPARKLE ENGINE
+    // ==========================================
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    let confettiParticles = [];
+    let animationFrameId = null;
+
+    function resizeConfettiCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeConfettiCanvas);
+
+    const confettiColors = ['#f472b6', '#fbcfe8', '#c084fc', '#fbbf24', '#fde047', '#38bdf8', '#ffffff'];
+
+    function launchConfettiBurst() {
+      const count = 110;
+      for (let i = 0; i < count; i++) {
+        confettiParticles.push({
+          x: Math.random() * canvas.width,
+          y: canvas.height * 0.25 + (Math.random() - 0.5) * 140,
+          vx: (Math.random() - 0.5) * 12,
+          vy: -Math.random() * 11 - 3,
+          size: Math.random() * 8 + 5,
+          color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+          rotation: Math.random() * 360,
+          rotationSpeed: (Math.random() - 0.5) * 10,
+          shape: Math.random() > 0.35 ? 'rect' : 'circle',
+          opacity: 1
+        });
+      }
+      if (!animationFrameId) {
+        animateConfetti();
+      }
+    }
+
+    function animateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      confettiParticles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.28;
+        p.vx *= 0.99;
+        p.rotation += p.rotationSpeed;
+        if (p.y > canvas.height * 0.85) {
+          p.opacity -= 0.025;
+        }
+
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.opacity);
+        ctx.translate(p.x, p.y);
+        ctx.rotate((p.rotation * Math.PI) / 180);
+        ctx.fillStyle = p.color;
+
+        if (p.shape === 'rect') {
+          ctx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2);
+        } else {
+          ctx.beginPath();
+          ctx.arc(0, 0, p.size / 2.2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.restore();
+      });
+
+      confettiParticles = confettiParticles.filter(p => p.opacity > 0 && p.y < canvas.height + 40);
+
+      if (confettiParticles.length > 0) {
+        animationFrameId = requestAnimationFrame(animateConfetti);
+      } else {
+        animationFrameId = null;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    // ==========================================
+    // 5. INITIALIZE ON WINDOW LOAD
+    // ==========================================
+    window.onload = function () {
+      resizeConfettiCanvas();
+      renderMoments();
+      renderWishes();
+      setTimeout(launchConfettiBurst, 500);
+    };
+  </script>
+</body>
+</html>
